@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Hopper Arcade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #808080; 
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+       
+        header .logo-container {
+            background-color: #333;
+            padding: 0px; 
+            border-radius: 5px; 
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+        }
+
+        header .logo {
+            max-width: 159px; 
+            height: auto;
+        }
+        
+
+       
+        header .navbar {
+            background-color: #333;
+            padding: 10px ;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        header .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 35px;
+        }
+        .navbar {
+            margin-left: auto; 
+        }
+        header .navbar ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+
+        header .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .banner {
+            position: relative;
+        }
+
+        .banner .hero-video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+            color: yellow;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        
+        .explore {
+            background-color: #fcd116; 
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .explore h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .image-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 40px; 
+        }
+
+        .explore-image {
+            width: 600px; 
+            height: auto;
+            border-radius: 10px;
+        }
+
+       
+        .newsletter {
+            text-align: center;
+            padding: 20px;
+            background-color: #fcd116;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            display: block;
+            width: 300px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #4d4d4d;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4d4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        #submission-message {
+            color: green;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+      
+        footer {
+            background-color: #4d4d4d;
+            color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="navbar">
+           
+            <div class="logo-container">
+                <img src="coinhopperlogo.png" alt="Coin Hopper Logo" class="logo">
+            </div>
+            <ul>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Parties.html">Parties</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+   
+    <main>
+        <div class="banner">
+            <video autoplay loop muted class="hero-video">
+                <source src="TESTvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="welcome-text"></div>
+        </div>
+
+        
+        <section class="explore">
+            <h2>EXPLORE OUR AMENITIES</h2>
+            <p>Hours of Operation: 7 Days Sun - Sat 10am-11pm</p><br>
+            <div class="image-links">
+                <a href="Error"><img src="win.png" alt="Tournaments" class="explore-image"></a>
+                <a href="Games.html"><img src="win 2.png" alt="Games" class="explore-image"></a>
+                <a href="Menu.html"><img src="win 3.png" alt="Menu" class="explore-image"></a>
+                <a href="Parties.html"><img src="win 4.png" alt="Book a Party" class="explore-image"></a>
+            </div>
+        </section>
+
+     
+        <section class="newsletter">
+            <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+            <form id="newsletter-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <p id="submission-message" class="hidden"></p>
+        </section>
+    </main>
+
+ 
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="Error.html">Privacy Policy</a></li>
+                <li><a href="Error.html">Careers</a></li>
+                <li><a href="Error.html">Contact Us</a></li>
+                <li><a href="Error.html">Terms and Conditions</a></li>
+                <li>Customer Support #: (555) 555-5555</li>
+            </ul>
+        </div>
+    </footer>
+    <footer>
+        <p>&copy; 2024 Coin Hopper Arcade. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        
+        document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const message = document.getElementById("submission-message");
+            message.textContent = "Your submission was received. Thank you!";
+            message.classList.remove("hidden");
+        });
+    </script>
+</body>
+</html>
+
