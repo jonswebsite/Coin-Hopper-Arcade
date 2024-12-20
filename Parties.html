@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Hopper Arcade</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #808080;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        
+        header .navbar {
+            background-color: #333; 
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        header .navbar ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fcd116;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            max-height: 50px;
+        }
+
+      
+        .banner {
+            position: relative;
+        }
+
+        .banner .hero-image {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+            color: #fcd116;
+            text-shadow: 2px 2px 8px #000;
+        }
+
+        
+        .party-packages {
+            background-color: #4d4d4d;
+            color: #fcd116;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .party-package {
+            background-color: #fcd116;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .party-package h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .party-package ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        
+        .party-booking {
+            background-color: #4d4d4d;
+            color: #fcd116;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .party-booking h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #fcd116;
+        }
+
+        .party-booking form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .party-booking label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .party-booking input,
+        .party-booking select,
+        .party-booking button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .party-booking button {
+            background-color: #fcd116;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .party-booking button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #booking-message {
+            color: green;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+       
+        .newsletter {
+            text-align: center;
+            padding: 20px;
+            background-color: #fcd116;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            display: block;
+            width: 300px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #4d4d4d;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4d4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        #submission-message {
+            color: green;
+            margin-top: 10px;
+        }
+
+       
+        footer {
+            background-color: #4d4d4d;
+            color: yellow;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    
+    <header>
+        <div class="navbar">
+            <img src="coinhopperlogo.png" alt="Logo" class="logo">
+            <ul>
+                <li><a href="Main Page.html">Main Menu</a></li>
+                <li><a href="Menu.html">Food Menu</a></li>
+                <li><a href="Games.html">Games</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="banner">
+            <img src="win 4 copy.png" alt="Boy Playing Arcade" class="hero-image">
+            <div class="welcome-text"></div>
+        </div>
+
+       
+        <section class="party-packages">
+            <div class="party-package">
+                <h3>Package 1 - $200</h3>
+                <ul>
+                    <li>2 hours of unlimited gameplay on classic arcade machines.</li>
+                    <li>Reserved party area for 3 hours.</li>
+                    <li>1 slice of pizza per guest + 1 soft drink per guest.</li>
+                    <li>1 group photo with an arcade-themed backdrop.</li>
+                </ul>
+            </div>
+            <div class="party-package">
+                <h3>Package 2 - $300</h3>
+                <ul>
+                    <li>3 hours of unlimited gameplay on arcade machines.</li>
+                    <li>Reserved party area for 3 hours.</li>
+                    <li>2 slices of pizza per guest + 2 soft drinks per guest.</li>
+                    <li>A mini arcade tournament for the group with a small prize for the winner.</li>
+                    <li>1 group photo with an arcade-themed backdrop.</li>
+                </ul>
+            </div>
+            <div class="party-package">
+                <h3>Package 3 - $550</h3>
+                <ul>
+                    <li>3.5 hours of unlimited arcade gameplay.</li>
+                    <li>Reserved party area for 4 hours.</li>
+                    <li>Endless soft drinks and pizza per guest.</li>
+                    <li>1 group photo with an arcade-themed backdrop.</li>
+                    <li>1 Carvel ice cream cake.</li>
+                    <li>Free arcade-themed gift.</li>
+                </ul>
+            </div>
+        </section>
+
+       
+        <section class="party-booking">
+            <h2>Book Your Party</h2>
+            <form id="party-booking-form">
+                <div>
+                    <label for="party-package">Party Package</label>
+                    <select id="party-package" required>
+                        <option value="">Select a Package</option>
+                        <option value="1">Party Package 1</option>
+                        <option value="2">Party Package 2</option>
+                        <option value="3">Party Package 3</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number" placeholder="Enter Phone Number" required>
+                </div>
+
+                <div>
+                    <label for="number-of-people">Number of People</label>
+                    <select id="number-of-people" required>
+                        <option value="">Select Number of People</option>
+                        <script>
+                            for (let i = 1; i <= 25; i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="party-date">Party Date</label>
+                    <input type="date" id="party-date" required>
+                </div>
+
+                <div>
+                    <label for="party-time">Party Time</label>
+                    <input type="time" id="party-time" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="booking-message" class="hidden"></p>
+        </section>
+
+        
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" required>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+                <button type="submit">Subscribe</button>
+                <p id="submission-message" class="hidden"></p>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="Error.html">Privacy Policy</a></li>
+                <li><a href="Error.html">Careers</a></li>
+                <li><a href="Error.html">Contact Us</a></li>
+                <li><a href="Error.html">Terms and Conditions</a></li>
+                <li>Customer Support #: (555) 555-5555</li>
+            </ul>
+        </div>
+    </footer>
+    <footer>
+        <p>&copy; 2024 Coin Hopper Arcade. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+       
+        document.getElementById("party-booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("booking-message").classList.remove("hidden");
+            document.getElementById("booking-message").textContent = "Thank you for booking your party! We will contact you soon!";
+            event.target.reset();
+        });
+
+        
+        document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("submission-message").classList.remove("hidden");
+            document.getElementById("submission-message").textContent = "Thank you for subscribing to our newsletter!";
+            event.target.reset();
+
+        });
+    </script>
+</body>
+</html>

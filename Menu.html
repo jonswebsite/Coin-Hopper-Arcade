@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcd116;
+        }
+
+        .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.logo {
+    height: 50px; 
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            text-align: center;
+            position: relative;
+        }
+
+        .header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .navbar {
+            margin-left: auto; 
+        }
+
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .menu-item {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu-item h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+        }
+
+        .soft-drinks {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .soft-drinks img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .newsletter {
+            text-align: center;
+            padding: 20px;
+            background-color: #fcd116;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            display: block;
+            width: 300px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #4d4d4d;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4d4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        #submission-message {
+            color: green;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #4d4d4d;
+            color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        footer .footer-links a {
+            color: yellow;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffcc00;
+        }
+
+   
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4d4d4d;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #back-to-top:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+       
+        <img src="coinhopperlogo.png" alt="Coin Hopper Logo" class="logo">
+        <a href="Main Page.html">Main Menu</a>
+        <a href="Parties.html">Parties</a>
+        <a href="Games.html">Games</a>
+    </div>
+
+    <div class="header">
+        <img src="foodmenu.png" alt="Food Menu">
+    </div>
+
+    
+    <div class="content">
+       
+        <h2 class="section-title">PIZZA</h2>
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3>Pepperoni</h3>
+                <p>A timeless favorite with a crispy crust, zesty tomato sauce, gooey mozzarella, and a generous layer of spicy pepperoni.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Meat Lovers' Feast</h3>
+                <p>Loaded with savory pepperoni, Italian sausage, bacon, and ham, this pizza satisfies every carnivore's cravings.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Veggie Garden Pizza</h3>
+                <p>A colorful mix of bell peppers, mushrooms, black olives, spinach, and onions over a perfectly melted cheese layer.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Classic Cheese</h3>
+                <p>Crispy crust topped with marinara and a mix of mozzarella and parmesan cooked to perfection.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Buffalo Chicken Kick</h3>
+                <p>Spicy buffalo sauce, tender grilled chicken, red onions, and mozzarella, finished with a cool ranch drizzle.</p>
+            </div>
+            <div class="menu-item">
+                <h3>BBQ Chicken Supreme</h3>
+                <p>Smoky BBQ sauce topped with grilled chicken, red onions, mozzarella, and a sprinkle of cilantro for a bold twist.</p>
+            </div>
+        </div>
+
+        
+        <h2 class="section-title">WINGS</h2>
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3>Classic Buffalo</h3>
+                <p>A fiery and tangy favorite, these wings bring the perfect balance of heat and flavor.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Honey BBQ</h3>
+                <p>Sweet, smoky, and sticky, these wings are slathered in rich honey BBQ sauce for the perfect bite.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Mango Habanero Heat</h3>
+                <p>Sweet tropical mango meets fiery habanero for a flavor explosion that packs a punch.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Garlic Parmesan</h3>
+                <p>Crispy wings tossed in a savory garlic butter sauce and topped with freshly grated Parmesan cheese.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Lemon Pepper Zing</h3>
+                <p>A zesty mix of tangy lemon and cracked black pepper that will leave your taste buds dancing.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Teriyaki Glaze</h3>
+                <p>Juicy wings coated in a rich, sweet, and salty teriyaki sauce, finished with a sprinkle of sesame seeds.</p>
+            </div>
+        </div>
+
+       
+        <h2 class="section-title">DRINKS</h2>
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3>Power-Up Punch</h3>
+                <p>A fruity blend of vodka, pineapple juice, orange juice, and grenadine for a tropical kick.</p>
+            </div>
+            <div class="menu-item">
+                <h3>The High Score Mule</h3>
+                <p>Vodka, ginger beer, and fresh lime juice, served in a chilled copper mug.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Game Over Margarita</h3>
+                <p>Classic tequila, triple sec, and lime juice, served on the rocks with a salted rim.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Retro Old Fashioned</h3>
+                <p>A smooth, timeless blend of bourbon, sugar, bitters, and an orange twist.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pixelated Paloma</h3>
+                <p>Tequila and grapefruit soda with a splash of lime, finished with a sugared rim.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Level-Up Lemonade</h3>
+                <p>Sweet and sour lemonade spiked with citrus vodka and a splash of blue curaçao for a glowing look.</p>
+            </div>
+        </div>
+
+        
+        <div class="soft-drinks">
+            <h2 class="section-title">SOFT DRINKS</h2>
+            <div class="menu-item">
+                <img src="../sodap.png" alt="Soft Drinks" style="width: 67%; max-width: 100%; height: auto;">
+            </div>
+        </div>
+
+        
+        <h2 class="section-title">DESSERT</h2>
+        <div class="menu-section">
+            <div class="menu-item">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>A warm, freshly baked treat with a golden, buttery exterior and gooey chocolate chips in every bite.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Churro</h3>
+                <p>A golden, crispy pastry coated in cinnamon sugar, with a soft and fluffy interior.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Brownie</h3>
+                <p>A decadent, fudgy square of chocolate indulgence, with a perfectly crisp top and a rich, moist interior.</p>
+            </div>
+        </div>
+        <p>*Food prices listed in store*</p>
+
+        <section class="newsletter">
+            <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+            <form id="newsletter-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <p id="submission-message" class="hidden"></p>
+        </section>
+
+      
+        <footer>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="Error.html">Privacy Policy</a></li>
+                    <li><a href="Error.html">Careers</a></li>
+                    <li><a href="Error.html">Contact Us</a></li>
+                    <li><a href="Error.html">Terms and Conditions</a></li>
+                    <li>Customer Support #: (555) 555-5555</li>
+                </ul>
+            </div>
+
+            <p>&copy; 2024 Coin Hopper Arcade. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    
+    <button id="back-to-top">↑</button>
+
+    <script>
+       
+        const backToTopButton = document.getElementById('back-to-top');
+
+       
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
